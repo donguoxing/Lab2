@@ -253,14 +253,13 @@ boot_alloc(uint32_t n)
 	//
 	// LAB 2: Your code here.
 	// Hole 'n' bytes memory
+	v = (void *) nextfree;
 	nextfree += n;
 	// Align nextfree
 	nextfree = round_up (nextfree, PGSIZE);
 	// Panic when out of memory
 	if((unsigned int) nextfree < (unsigned int) end)
 	panic("boot_alloc: out of memory.\n");
-	// Return updated pointer points after 'n' bytes
-	v = (void *) nextfree;
 	return v;
 }
 

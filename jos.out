@@ -6,13 +6,13 @@ boot_mem_check() succeeded!
 Welcome to the JOS kernel monitor!
 Type 'help' for a list of commands.
 TRAP frame at 0xf0108fa4
-  edi  0x0008ffac
+  edi  0x0000ffac
   esi  0x00010094
   ebp  0xf0108ff8
   oesp 0xf0108fc4
-  ebx  0xf0117000
+  ebx  0xf0119000
   edx  0x0000f011
-  ecx  0x00000780
+  ecx  0x000003d5
   eax  0x00000028
   es   0x----0010
   ds   0x----0010
@@ -21,7 +21,7 @@ TRAP frame at 0xf0108fa4
   eip  0xf0109103
   cs   0x----0008
   flag 0x00000006
-  esp  0xf010cf72
+  esp  0xf010ce32
   ss   0x----1aac
 K> exit
 Breakpoint succeeded!
